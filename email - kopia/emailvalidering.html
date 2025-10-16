@@ -1,0 +1,36 @@
+<!DOCTYPE html>
+<html lang="sv">
+<head>
+  <meta charset="UTF-8">
+  <title>Registreringsformulär</title>
+  <link rel="stylesheet" href="email.css">
+ 
+</head>
+<body>
+  <h2>Registrera dig</h2>
+  <form id="registerForm">
+    <label>Förnamn:
+      <input type="text" id="firstname" required minlength="2">
+    </label>
+    <label>Efternamn:
+      <input type="text" id="lastname" required minlength="2">
+    </label>
+    <label>E-post:
+      <input type="email" id="email" required>
+    </label>
+    <label>Lösenord:
+      <input type="password" id="password" required>
+    </label>
+    <label>Bekräfta lösenord:
+      <input type="password" id="confirmPassword" required>
+    </label>
+    <label>Ålder:
+      <input type="number" id="age" required min="18" max="100">
+    </label>
+    <div id="errorMessages" class="error"></div>
+    <button type="submit">Skicka</button>
+  </form>
+
+  <script src="emailvalidering.js"></script>
+</body>
+</html>
